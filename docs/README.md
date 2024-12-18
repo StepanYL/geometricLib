@@ -125,7 +125,7 @@
 <summary>${\color {cyan} testPerimeterZero}$ </summary>
 Тест проверяет случай нулевого периметра
 Пример:
-check = square.testPerimeterZero(0)
+check = square.testPerimeterZero(0) \
 self.assertEqual(check, 0)
 </details>
 
@@ -135,7 +135,7 @@ self.assertEqual(check, 0)
 
 Пример:
 
-check = rectangle.perimeter(4611686018427387904, 4611686018427387904)
+check = rectangle.perimeter(4611686018427387904, 4611686018427387904) \
 self.assertEqual(check, 18446744073709551616)
 </details>
 
@@ -145,8 +145,8 @@ self.assertEqual(check, 18446744073709551616)
 
 Пример:
 
-check1 = rectangle.perimeter(3, 3)
-check2 = rectangle.perimeter(3, 3 + eps)
+check1 = rectangle.perimeter(3, 3) \
+check2 = rectangle.perimeter(3, 3 + eps) \
 self.assertNotEqual(check1, check2)
 </details>
 
@@ -156,7 +156,7 @@ self.assertNotEqual(check1, check2)
 
 Пример:
 
-check = square.testAreaZero(0)
+check = square.testAreaZero(0) \
 self.assertEqual(check, 0)
 </details>
 
@@ -166,7 +166,7 @@ self.assertEqual(check, 0)
 
 Пример:
 
-check = circle.area(10000000000)
+check = circle.area(10000000000) \
 self.assertEqual(check, 100000000000000000000 * pi)
 </details>
 
@@ -176,8 +176,8 @@ self.assertEqual(check, 100000000000000000000 * pi)
 
 Пример:
 
-check1 = rectangle.area(2, 2)
-check2 = rectangle.area(2 + eps, 2)
+check1 = rectangle.area(2, 2) \
+check2 = rectangle.area(2 + eps, 2) \
 self.assertNotEqual(check1, check2)
 </details>
 
