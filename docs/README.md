@@ -124,7 +124,9 @@
 <details>
 <summary>${\color {cyan} testPerimeterZero}$ </summary>
 Тест проверяет случай нулевого периметра
+
 Пример:
+
 check = square.testPerimeterZero(0) \
 self.assertEqual(check, 0)
 </details>
