@@ -4,7 +4,7 @@
 ###  ${\color {magenta} \textbf{area()}  }$ 
 Используется для нахождения площади фигур
 <details>
-<summary>${\color {cyan} Площадь прямоугольника - \ area(a, b) \ в \ файле \ rectangle.py}$ </summary>
+<summary>${\color {cyan} Площадь \ прямоугольника\ - \ area(a, b) \ в \ файле \ rectangle.py}$ </summary>
 Функция использует формулу для нахождения площади прямоугольника по двум сторонам: S = ab
 
 Параметры:
@@ -18,7 +18,7 @@
 </details>
 
 <details>
-<summary>${\color {cyan} Площадь квадрата - \ area(a)\ в\ файле\ square.py}$ </summary>
+<summary>${\color {cyan} Площадь \ квадрата\ - \ area(a)\ в\ файле\ square.py}$ </summary>
 
 Функция использует формулу для нахождения площади квадрата по длине его стороны: S = a * a
 
