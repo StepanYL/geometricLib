@@ -66,6 +66,7 @@
 
 <summary>${\color {cyan} Периметр \  прямоугольника\ -\ perimeter(a, b)\ в\ файле\ rectangle.py }$</summary>
 Функция использует формулу для нахождения периметра прямоугольника по длине двух его сторон: P = (a + b) * 2
+
 Параметры:
   - a (float): длина прямоугольника
   - b (float): ширина прямоугольника
@@ -131,7 +132,9 @@ self.assertEqual(check, 0)
 <details>
 <summary>${\color {cyan} testPerimeterBigValues}$ </summary>
 Тест проверяет корректность нахождения периметра при больших размерах фигуры
+
 Пример:
+
 check = rectangle.perimeter(4611686018427387904, 4611686018427387904)
 self.assertEqual(check, 18446744073709551616)
 </details>
@@ -139,7 +142,9 @@ self.assertEqual(check, 18446744073709551616)
 <details>
 <summary>${\color {cyan} testPerimeterPrecision}$ </summary>
 Тест проверяет корректность нахождения периметра при необходимой точности eps = 1е-9
+
 Пример:
+
 check1 = rectangle.perimeter(3, 3)
 check2 = rectangle.perimeter(3, 3 + eps)
 self.assertNotEqual(check1, check2)
@@ -148,7 +153,9 @@ self.assertNotEqual(check1, check2)
 <details>
 <summary>${\color {cyan} testAreaZero}$ </summary>
 Тест проверяет случай нулевой площади
+
 Пример:
+
 check = square.testAreaZero(0)
 self.assertEqual(check, 0)
 </details>
@@ -156,7 +163,9 @@ self.assertEqual(check, 0)
 <details>
 <summary>${\color {cyan} testAreaBigValues}$ </summary>
 Тест проверяет корректность нахождения площади при больших размерах фигуры
+
 Пример:
+
 check = circle.area(10000000000)
 self.assertEqual(check, 100000000000000000000 * pi)
 </details>
@@ -164,7 +173,9 @@ self.assertEqual(check, 100000000000000000000 * pi)
 <details>
 <summary>${\color {cyan} testAreaPrecision}$ </summary>
 Тест проверяет корректность нахождения площади при необходимой точности eps = 1e-9
+
 Пример:
+
 check1 = rectangle.area(2, 2)
 check2 = rectangle.area(2 + eps, 2)
 self.assertNotEqual(check1, check2)
