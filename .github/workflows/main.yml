@@ -1,0 +1,29 @@
+name: Geometric Lib
+on: [push]
+
+jobs:
+  ububtu-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check Out
+        uses: actions/checkout@v1
+      - name: Python Setup
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.10.*
+      - name: Test
+        run: python -m unittest tests.py
+
+  windows-test:
+    runs-on: windows-latest
+
+    steps:
+      - name: Check Out
+        uses: actions/checkout@v1
+      - name: Python Setup
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.10.*
+      - name: Test
+        run: python -m unittest tests.py
